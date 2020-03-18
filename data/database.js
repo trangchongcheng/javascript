@@ -9,6 +9,4 @@ var eMagazine = [
     ],
     author:["Nguyen thi nhung","Tran hong vy"]
     }
-   
-
 ]
