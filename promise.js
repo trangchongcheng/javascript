@@ -59,3 +59,40 @@ countFrom(10,20)
 .then(done=>{
     console.log(done);
 })
+
+
+// Promise All
+
+/**
+ * Sử dụng Promise.all + axios để tải về 3 đường link sau cùng lúc và hiển thị ra kết quả:
+ * https://jsonplaceholder.typicode.com/todos/1
+ * https://jsonplaceholder.typicode.com/todos/2
+ * https://jsonplaceholder.typicode.com/todos/3
+ */
+
+const axios = require('axios');
+
+function load(link){
+  return new Promise((resolve, reject)=>{
+    axios({
+      method:"get",
+      url:link
+    })
+    .then(data=>
+      resolve(data)
+      )
+    .catch(error=>
+      reject(error))
+
+})
+}
+
+Promise.all([
+  load('https://jsonplaceholder.typicode.com/todos/1'),
+  load('https://jsonplaceholder.typicode.com/todos/2'),
+  load('https://jsonplaceholder.typicode.com/todos/3'),
+]).then(data=>
+  console.log(data)
+).catch(error=>
+  console.log(error)
+)
