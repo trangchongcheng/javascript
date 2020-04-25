@@ -1,4 +1,5 @@
-for...in và for...of đều là vòng lặp danh sách các đối tượng (mảng, object), for...in thì trả về danh sách các key nếu là object, vị trí index nếu là mảng.
+for...in và for...of đều là vòng lặp danh sách các đối tượng (mảng, object), for...in thì trả về danh sách các key nếu là object,
+   vị trí index nếu là mảng.
 for...of thì trả về lần lượt các giá trị của một mảng và không hoạt động với object.
 
 
