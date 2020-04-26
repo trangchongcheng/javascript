@@ -15,7 +15,8 @@
 // ta dùng hàm then() để xử lý khi thành công và catch() khi thất bại
 // thường được sử dụng kho thực hiện các callback lồng nhau tránh việc callback hell như: ajax request,
 // setTimeOut, 
-
+// Trong JS các tiến trình bất đồng bộ sẽ được thực hiện ngẫu nhiên không xác định được tiến trình nào xử lý trước và sau và
+// Promis sẽ giúp chúng ta việc này.
 // var fs = require('fs');
 
 // function readFilePromise(path){
